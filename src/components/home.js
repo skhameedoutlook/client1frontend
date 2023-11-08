@@ -1,5 +1,7 @@
+import { HomeNav } from "./nav/homenav"
+
 export const Home = () => {
     return <div>
-        Home
+        <HomeNav></HomeNav>
     </div>
 }
