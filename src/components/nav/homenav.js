@@ -20,11 +20,11 @@ export const HomeNav = () => {
   }, []);
 
   return (
-    <div>
+    <div className="bg-slate-100 p-3">
       {
         isMobile ? (
           <div className="flex justify-between">
-            <div>
+            <div className="flex">
               <ThreeBarIcon />
               <HomeNavLogo />
             </div>
