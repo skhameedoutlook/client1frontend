@@ -20,10 +20,10 @@ export const HomeNav = () => {
   }, []);
 
   return (
-    <div className="bg-slate-100 p-3">
+    <div className="bg-slate-100 p-3 h-fit">
       {
         isMobile ? (
-          <div className="flex justify-between">
+          <div className="flex justify-between place-items-center">
             <div className="flex">
               <ThreeBarIcon />
               <HomeNavLogo />
@@ -31,7 +31,7 @@ export const HomeNav = () => {
             <HomeNavUsers />
           </div>
         ) : (
-          <div className="flex justify-between">
+          <div className="flex justify-between place-items-center">
             <HomeNavLogo />
             <HomeNavLinksHorizontal />
             <HomeNavUsers />

@@ -1,5 +1,5 @@
 export const HomeNavLogo = () => {
-    return <div>
-        HomeNavLogo
+    return <div className="font-bold">
+        Data Connector
     </div>
 }
