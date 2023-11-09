@@ -1,0 +1,16 @@
+.mobile-nav-item {
+  height: 40px;
+  border-color: #1E293B;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.mobile-nav-item.visible {
+  opacity: 1;
+}
+
+.mobile-nav-item.open:hover {
+  background: grey;
+}
+
