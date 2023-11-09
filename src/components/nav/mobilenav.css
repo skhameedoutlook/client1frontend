@@ -1,8 +1,8 @@
-.mobile-nav {
-  width: 0;
-  transition: width 0.3s ease-in-out;
+.mobile-nav-hidden {
+  transform: translateX(-200px);
+  transition: all 0.3s;
 }
 
-.mobile-nav.open {
-  width: 30%;
+.mobile-nav-open {
+  transition: all 0.3s;
 }

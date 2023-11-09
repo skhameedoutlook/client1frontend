@@ -1,14 +1,15 @@
 import { Link } from "react-router-dom"
 import { ThreeBarIcon } from "./threebaricon"
 import { HomeNavLogo } from "./homenavlogo"
+import './mobilenav.css'
 
 const HomeNavStyles = {
   height: '45px',
   lineHeight: '45px',
 }
 
-export const SideNav = ({handleMenuOpen}) => {
-  return <div className="fixed h-screen bg-slate-100">
+export const SideNav = ({isMobile, isMenuOpen, handleMenuOpen}) => {
+  return <div className={`fixed h-screen bg-slate-100 ${isMobile && isMenuOpen ? 'mobile-nav-open' : 'mobile-nav-hidden'}`}>
     <div className={`flex flex-col justify-between items-center`} style={HomeNavStyles}>
       <div className="flex items-center">
         <ThreeBarIcon handleMenuOpen={handleMenuOpen} />

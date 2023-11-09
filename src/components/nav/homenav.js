@@ -31,7 +31,7 @@ export const HomeNav = () => {
 
   return (
     <div className="bg-slate-100">
-      { isMobile && isMenuOpen ? <SideNav handleMenuOpen={() => {setIsMenuOpen(current => !current)}} /> : null }
+      <SideNav isMobile={isMobile} isMenuOpen={isMenuOpen} handleMenuOpen={() => {setIsMenuOpen(current => !current)}} />
       {
         isMobile ? (
           <div className="flex justify-between items-center" style={HomeNavStyles}>
